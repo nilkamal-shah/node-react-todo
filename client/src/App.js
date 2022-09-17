@@ -21,10 +21,10 @@ function App() {
 					</div>
 				</nav>
 				<Routes>
-					<Route path="/" element={<Todos />} />
+					
 					<Route path="/create/:id" element={<CreateTodo />} />
 					<Route path="/create" element={<CreateTodo />} />
-
+					<Route path="/" element={<Todos />} />
 				</Routes>
 			</BrowserRouter>
 		</div>

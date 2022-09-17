@@ -1,4 +1,4 @@
-export const BASE_URL = window.location.hostname() === 'localhost' ? 'http://localhost:5000': '';
+export const BASE_URL = process.env.NODE_ENV === 'development' ?  'http://localhost:5000': '';
 
 export const getTodos = async () => {
     const todos = await fetch(`${BASE_URL}/api/todos`);
